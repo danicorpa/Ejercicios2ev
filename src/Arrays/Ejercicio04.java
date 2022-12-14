@@ -1,7 +1,7 @@
 package Arrays;
 
 import java.util.Scanner;
-
+import java.util.Arrays;
 /**
  * @author Daniel Martin
  *
@@ -14,7 +14,23 @@ public class Ejercicio04 {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
+        System.out.println("Introduce un numero de 1 a 20: ");
+        int size = sc.nextInt();
+        int[] numeros = new int[size];
+        int suma =0;
+        for(int i=0;i < numeros.length;i++){
 
+            int num = (int) (Math.random() * 10 + 1);
+            numeros[i] = num;
 
+        }
+        for(int y = 0; y < numeros.length;y++){
+
+            suma += numeros[y];
+
+        }
+
+        System.out.println(Arrays.toString(numeros));
+        System.out.println(suma);
     }
 }
