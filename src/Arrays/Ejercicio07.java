@@ -19,20 +19,21 @@ public class Ejercicio07 {
 
     public static void main(String[] args) {
 
-        int media = 0;
+        double media = 0;
         Scanner sc = new Scanner(System.in);
         System.out.println("Introduce las 5 últimas notas: ");
-        int[] notas = new int[5];
+        double[] notas = new double[5];
         for(int i = 0; i < notas.length;i++){
-            notas[i] = sc.nextInt();
+            notas[i] = sc.nextDouble();
             media += notas[i];
         }
         media = media / notas.length;
         Arrays.sort(notas);
         System.out.println("Tu nota mas baja es: "+notas[0]);
-        System.out.println("Tu nota mas alta es: "+notas[4]);
+        System.out.println("Tu nota mas alta es: "+notas[notas.length - 1]);
         System.out.println("Tu media es: "+media);
-        System.out.println("Tus notas son: " + Arrays.toString(notas));
+        System.out.print("Tus notas son: \t");
+        for(double elemento:notas){System.out.printf("%.2f \t" , elemento);}
 
 
     }
