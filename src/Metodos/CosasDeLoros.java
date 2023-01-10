@@ -45,14 +45,14 @@ public class CosasDeLoros {
     // (peso del loro / 5 )*edad del loro (recibe el peso y la edad)
     public static double recibeCantidad(double p, int edad) {
 
-        double cantidad = (p / 5) * edad;
+        double cantidad = (p / 5) + edad;
         return cantidad;
 
     }
     //
     public static void imprimeCantidad(){
 
-        System.out.print(recibeCantidad(pidePeso(), pideEdad())+"gr");
+        System.out.print("La ración adecuada para este loro es de "+recibeCantidad(pidePeso(), pideEdad())+"gr");
 
     }
 }
