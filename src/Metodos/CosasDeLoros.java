@@ -27,7 +27,7 @@ public class CosasDeLoros {
 
     }
 
-    public static double recibePeso(){
+    public static double pidePeso(){
 
         Scanner sc = new Scanner(System.in);
         System.out.println("Introduce el peso del loro: ");
@@ -35,7 +35,7 @@ public class CosasDeLoros {
 
     }
 
-    public static int recibeEdad(){
+    public static int pideEdad(){
 
         Scanner sc = new Scanner(System.in);
         System.out.println("Introduce la edad del loro: ");
@@ -52,7 +52,7 @@ public class CosasDeLoros {
     //
     public static void imprimeCantidad(){
 
-        System.out.print(recibeCantidad(recibePeso(), recibeEdad())+"gr");
+        System.out.print(recibeCantidad(pidePeso(), pideEdad())+"gr");
 
     }
 }
