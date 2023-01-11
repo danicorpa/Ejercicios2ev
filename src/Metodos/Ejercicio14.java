@@ -26,41 +26,25 @@ public class Ejercicio14 {
          */
         imprimeCantidad();
     }
-
     public static String frase(){
-
         Scanner sc = new Scanner(System.in);
         System.out.println("Introduce una frase: ");
         String frase= sc.nextLine();
         return frase;
     }
-
-
     public static int cuentaPalabras(String frase){
-
            int contador=0;
            for (int i= 0;i < frase.length(); i++) {
-
                 if(frase.charAt(i)==' '){
-
                     contador++;
-
                 }
-
             }
-
-
-
             return contador+1;
         }
-
-
         public static void imprimeCantidad(){
 
             System.out.println("Hay "+(cuentaPalabras(frase()))+" palabras.");
-
         }
-
 }
 
 
