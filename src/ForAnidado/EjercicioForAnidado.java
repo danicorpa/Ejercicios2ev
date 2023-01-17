@@ -78,7 +78,7 @@ public class EjercicioForAnidado {
 
                 for(int j=0;j<num;j++){
 
-                    System.out.print(c+" ");
+                    System.out.print(c+"\t");
 
                 }
                 System.out.println();
@@ -91,9 +91,9 @@ public class EjercicioForAnidado {
 
     private static void ejercicio28(){
 
-        System.out.println("28 Escribe un programa que reciba dos valores enteros por teclado, a y b, y dibuje un\\n\" +\n" +
-                "                \"rectángulo en que la base sea el número mayor y la altura el número menor, con un\\n\" +\n" +
-                "                \"carácter también introducido por teclado.");
+        System.out.println("28 Escribe un programa que reciba dos valores enteros por teclado, a y b, y dibuje un\n"  +
+                "rectángulo en que la base sea el número mayor y la altura el número menor, con un\n" +
+                "carácter también introducido por teclado.");
         System.out.println("Inserta un número entero: ");
         int num1 = sc.nextInt();
         System.out.println("Inserta otro número entero: ");
@@ -115,7 +115,7 @@ public class EjercicioForAnidado {
 
                     for(int j=0;j<num1;j++){
 
-                        System.out.print(c+" ");
+                        System.out.print(c+"\t");
 
                     }
                     System.out.println();
@@ -132,13 +132,50 @@ public class EjercicioForAnidado {
 
     }
     private static void ejercicio29(){
-        System.out.println("29 Hacer un programa que introduzca un número entero, positivo, y calcule su tabla de\\n\" +\n" +
-                "                \"multiplicar, hasta llegar a él. (Nota: para que los números queden alineados en columnas\\n\" +\n" +
-                "                \"puedes usar el tabulador \\\\t).");
+        System.out.println("29 Hacer un programa que introduzca un número entero, positivo, y calcule su tabla de\n" +
+                "multiplicar, hasta llegar a él. (Nota: para que los números queden alineados en columnas\n" +
+                "puedes usar el tabulador \\t).");
+        System.out.println("Inserta un número entero y te saco su tabla de multiplicar: ");
+        int num1 = sc.nextInt();
+        int producto;
 
+        if(num1 <=0 ){
+
+            System.out.println("El número debe ser un número entero positivo!! Melón!!");
+
+        }else {
+
+            for(int i=1;i <= num1; i++){
+
+                for(int j=1;j<=10;j++){
+
+                    producto=i*j;
+                    System.out.print(i+" X "+j+" "+" = "+producto+"\t");
+
+                }
+                System.out.println();
+            }
+
+
+
+        }
+    }
+    private static void ejercicio35(){
+        System.out.println("35 Hacer un programa que dibuje un triángulo rectángulo de n elementos de lado,\n" +
+                "siendo n un número introducido por teclado, utilizando asteriscos (*). Por ejemplo,\n" +
+                "para n = 5.");
+        System.out.println("Introduce un número entero: ");
+        int num = sc.nextInt(); sc.nextLine();
+        for(int i = 0; i < num;i++){
+            for(int j = 0; j< num -i ;j++){
+
+                System.out.print("*\t");
+
+            }
+            System.out.println();
+        }
 
     }
-    private static void ejercicio35(){}
 
     }
 
