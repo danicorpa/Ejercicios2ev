@@ -64,7 +64,7 @@ public class EjercicioExamen {
         int fila=0;
 
         do{
-            System.out.println("Elige fila: (0 - 4): ");
+            System.out.println("Elige fila: (0 - 3): ");
             fila = sc.nextInt();
             if(fila<0 || fila > 4){
                 System.out.println("Elige otra fila, fuera de rango. ");
@@ -72,20 +72,20 @@ public class EjercicioExamen {
             }
 
 
-        }while(fila<0 || fila > 4);
+        }while(fila<0 || fila > 3);
 
         int asiento = 0;
 
         do{
-            System.out.println("Elige asiento: (0 - 4): ");
+            System.out.println("Elige asiento: (0 - 3): ");
             fila = sc.nextInt();
-            if(asiento<0 || asiento > 4){
+            if(asiento<0 || asiento > 3){
                 System.out.println("Elige otro asiento, fuera de rango. ");
 
             }
 
 
-        }while(asiento < 0 || asiento > 4);
+        }while(asiento < 0 || asiento > 3);
         if(asientos[asiento][fila] == 'L'){
 
             asientos[asiento][fila] = 'X';
