@@ -110,7 +110,7 @@ public class Ejercicio21 {
                 puntos += 10;
             } else {
                 puntos += 12;
-            }
+            }//
 
         }
         System.out.println("\nTu puntuación de jugador 2 es de: " + puntos);
