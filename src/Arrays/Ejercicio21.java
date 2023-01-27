@@ -109,7 +109,7 @@ public class Ejercicio21 {
             } else if (mano2[i].startsWith("caballo")) {
                 puntos += 10;
             } else {
-                puntos += 12;
+                puntos += 12;//
             }//
 
         }
