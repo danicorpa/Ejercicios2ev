@@ -16,7 +16,7 @@ public class EjercicioExamen {
         Scanner sc = new Scanner(System.in);
         int dia =0,mes =0;
         boolean fecha_correcta = false;
-        int[] diasMes = {31,28,31,30,31,30,31,31,30,31,30,31};
+        int[] diasMes = {31,28,31,30,31,30,31,31,30,31,30,31};//
         do {
                 System.out.println("Dia: ");
                 dia = sc.nextInt(); sc.nextLine();
