@@ -18,7 +18,7 @@ public class Ejercicio14ArrayList {
 
         ArrayList<Integer> entero = new ArrayList<>();
 
-        for(int i=0; i < 10 ; i++){
+        for(int i=0; i < 9 ; i++){
             int numeroAleatorio=(int) (Math.random()*10+1);
             entero.add(numeroAleatorio);
 
