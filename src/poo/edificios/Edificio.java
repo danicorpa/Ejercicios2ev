@@ -13,9 +13,10 @@ public class Edificio {
     // las caracteristicas son los atributos, las guardamos en variables
     // NO SE INICIALIZA ----> ESO LO HARÁ EL MÉTODO CONSTRUCTOR
     // Los métodos serán las funcionalidades
-    int numeroDePlantas;
+    int numeroDePlantas; // al no llevar modificador de acceso podemos acceder a otros attr desde cualquier
+    // clase del mismo paquete
     double area;
-    int anyoConstruccion;
+    public int anyoConstruccion;
 
     // Hay un método que siempre existe, este es el método CONSTRUCTOR
     // Aunque no lo escribas se crea implicitamente (constructor por defecto).
