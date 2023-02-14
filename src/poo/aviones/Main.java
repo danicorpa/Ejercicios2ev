@@ -26,7 +26,7 @@ public class Main {
 
         // el edificio puede crearlo porque tanto la clase como el constructor de Edificio son public
         Edificio ed1 = new Edificio(3,4.3,2022);
-        System.out.println(ed1.anyoConstruccion);
+        System.out.println(ed1.getAnyoConstruccion());
 
     }
 }
