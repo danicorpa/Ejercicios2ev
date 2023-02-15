@@ -20,13 +20,13 @@ public class Main {
         // para imrpimir todos los attr
         //System.out.println(paciente1);
         // podemos dar los valores a mano
-        paciente1.nombre="Valentin Danut";
-        paciente1.apellidos="Preutesei";
-        paciente1.fechaNacimiento="08/02/2001";
-        paciente1.numHistorial=1;
-        paciente1.alergias=false;
+        paciente1.setNombre("Valentin Danut");
+        paciente1.setApellidos("Preutesei");
+        paciente1.setFechaNacimiento("08/02/2001");
+        paciente1.setNumHistorial(1);
+        paciente1.setAlergias(true);
         String[] sintomasV = {"Cefalea"};
-        paciente1.sintomas=sintomasV;
+        paciente1.setSintomas(sintomasV);
 
         Paciente paciente2 = new Paciente("Daniel",
                                           "Martin Corpa",
