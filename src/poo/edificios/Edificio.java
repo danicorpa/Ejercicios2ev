@@ -24,6 +24,9 @@ public class Edificio {
     // de sus attr.
     // El constructor se denomina igual que el nombre de la clase.
 
+    public Edificio() {
+    }
+
     public Edificio(int numeroDePlantas, double area, int anyoConstruccion){
 
         this.anyoConstruccion = anyoConstruccion; // este objeto que estoy creando va a tener como año de construccion
